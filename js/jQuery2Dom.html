@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery2Dom</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+
+<!--jQuery对象转换为DOM对象 start-->
+<div>元素1</div>
+<div>元素2</div>
+<div>元素3</div>
+<script type="text/javascript">
+    var $div = $('div');//jQuery对象
+//    var div = $div[0];//转换为DOM对象
+    var newVar = $div.get(0);
+    newVar.style.color = 'red';
+</script>
+<!--jQuery对象转换为DOM对象 end-->
+
+<!--DOM对象转换为jQuery对象 start-->
+<!--<div>元素4</div>-->
+<!--<div>元素5</div>-->
+<!--<div>元素6</div>-->
+<!--<script type="text/javascript">-->
+    <!--//通过getElementsByTagName获取到所有div节点的元素，结果是一个dom合集对象，不过这个对象是一个数组合集(3个div元素)。-->
+    <!--$(document).ready(function () {-->
+        <!--var div = document.getElementsByTagName('div');//dom对象-->
+        <!--var $div = $(div);//DOM转换为jQuery对象-->
+        <!--var $first = $div.first();//拿到第一个元素-->
+        <!--var $second = $div.eq(1);//元素2-->
+        <!--var $third = $div.eq(2);//元素3-->
+        <!--$first.css('color', 'red');-->
+        <!--$second.css('color', 'blue');-->
+        <!--$third.css('color', 'cyan');-->
+    <!--})-->
+<!--</script>-->
+<!--DOM对象转换为jQuery对象 end-->
+
+<!--jQuery选择器之id选择器 start-->
+
+
+<!--jQuery选择器之id选择器 end-->
+
+
+
+
+</body>
+</html>
