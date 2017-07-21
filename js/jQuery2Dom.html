@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>jQuery2Dom</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
 </head>
 <body>
 
@@ -39,12 +39,28 @@
 <!--DOM对象转换为jQuery对象 end-->
 
 <!--jQuery选择器之id选择器 start-->
-
-
+<!--页面的任何操作都需要节点的支撑，开发者如何快速高效的找到指定的节点也是前端开发中的一个重点。id选择器：一个用来查找的ID，即元素的id属性
+    语法：$( "#id" )
+    id是唯一的，每个id值在一个页面中只能使用一次。如果多个元素分配了相同的id，将只匹配该id选择集合的第一个DOM元素。但这种行为不应该发生;有超过一个元素的页面使用相同的id是无效的-->
+<div id="junl">
+    <p>id="junl"</p>
+    <p>选中</p>
+</div>
+<!--原生代码实现-->
+<script type="text/javascript">
+    var div = document.getElementById('aaron');
+    div.style.border = "3px double blue"/*border:边框样式     dotted solid double dashed*/
+</script>
+<!--Jquery代码实现-->
+<script type="text/javascript">
+    $("#junl").css("border", "4px dashed red");
+</script>
 <!--jQuery选择器之id选择器 end-->
 
 
+<!--jQuery选择器之类选择器 start-->
 
+<!--jQuery选择器之类选择器 end-->
 
 </body>
 </html>

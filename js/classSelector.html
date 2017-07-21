@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>类选择器</title>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    <style>
+        div {
+            width: 150px;
+            height: 100px;
+            float: left;
+            padding: 5px;
+            margin: 10px;
+            background-color: #EEEEEE;
+        }
+    </style>
+</head>
+<body>
+
+<div class="junl">
+    <p>class = "junl"</p>
+    <p>选中</p>
+</div>
+<div class="junl">
+    <p>class = "junl"</p>
+    <p>wei选中</p>
+</div>
+<div class="feng">
+    <p>class = "feng"</p>
+    <p>jQuery选中</p>
+</div>
+<div class="feng">
+    <p>class = "feng"</p>
+    <p>jQuery未选中</p>
+</div>
+
+<!--<script type="text/javascript">-->
+    <!--var nodeList = document.getElementsByClassName("junl");-->
+    <!--for (var i = 0;i<nodeList.length;i++) {-->
+        <!--nodeList[i].style.border = "3px solid blue";-->
+    <!--}-->
+<!--</script>-->
+<!--<script type="text/javascript">-->
+    <!--$(".feng").css("border", "3px solid red");-->
+<!--</script>-->
+
+<script type="text/javascript">
+    var nodeList = document.getElementsByTagName('div');
+    for (var i = 0;i<nodeList.length;i++) {
+        nodeList[i].style.border = "5px double blue";
+    }
+</script>
+<script type="text/javascript">
+    $("p").css("border", "3px dashed red");
+</script>
+
+</body>
+</html>
